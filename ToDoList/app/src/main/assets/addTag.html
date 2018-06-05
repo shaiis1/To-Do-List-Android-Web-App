@@ -1,0 +1,42 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Add Tag</title>
+    <script src="resources/javascript/jquery/jquery-2.1.3.min.js"></script>
+    <script src="resources/jquery.mobile-1.4.5.min.js"></script>
+    <script src="resources/javascript/navigation_utils.js"></script>
+    <link rel="stylesheet" href="resources/jquery.mobile-1.4.5.min.css">
+    <script src="resources/javascript/add_tag.js"></script>
+    <script src="resources/javascript/jquery/jquery.serializejson.js"></script>
+
+
+</head>
+
+<body>
+</body>
+
+<p>Add Tag</p>
+<div data-role="content" data-theme="e">
+    <form id="tagControlForm">
+        <div data-role="fieldcontain" data-theme="b">
+            <label for="tag" class="select">Select/Create Tag</label>
+            <select name="tag" id="tag">
+                <option value="New Tag">New Tag</option>
+            </select>
+        </div>
+        <input type="hidden" name="id" id="id" hidden/>
+    </form>
+
+    <form id="addTagForm">
+        <div data-role="fieldcontain">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" value="" placeholder="Enter tag name"/>
+        </div>
+        <div data-role="fieldcontain">
+            <label for="color">Color:</label>
+            <input type="color" name="color" id="color" placeholder="Enter task comment">
+        </div>
+
+        <input type="button" name="submit" id="submit" value="Save Tag"/>
+
+    </form>
+</div>

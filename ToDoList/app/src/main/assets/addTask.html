@@ -1,0 +1,74 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Add Task</title>
+    <script src="resources/javascript/jquery/jquery-2.1.3.min.js"></script>
+    <script src="resources/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="resources/jquery.mobile-1.4.5.min.css">
+    <script src="resources/javascript/add_task.js"></script>
+    <script src="resources/javascript/jquery/jquery.serializejson.js"></script>
+
+</head>
+
+<body>
+</body>
+
+<div data-role="content" data-theme="e">
+    <form id="addTaskForm">
+        <div data-role="fieldcontain">
+            <label for="description">Description:</label>
+            <input type="text" name="description" id="description" value=""
+                   placeholder="Enter task description" data-mini="true"/>
+        </div>
+        <div data-role="fieldcontain" data-theme="b">
+            <label for="tag" class="select">Select Tag</label>
+            <select name="tag" id="tag" data-mini="true">
+                <option>Select Tag</option>
+            </select>
+        </div>
+
+        <div data-role="fieldcontain">
+            <label for="dueDate">Due Date:</label>
+            <input type="date" data-date-format="DD-MMMM-YYYY" id="dueDate" name="dueDate"
+                   data-mini="true"/>
+        </div>
+
+        <div data-role="fieldcontain">
+            <label for="priority">Priority:</label>
+            <select name="priority" id="priority" data-mini="true">
+                <option value="3" class="green_background">Low</option>
+                <option value="2" class="orange_background">Medium</option>
+                <option value="1" class="red_background">High</option>
+            </select>
+        </div>
+
+        <fieldset data-role="controlgroup" data-type="horizontal">
+            <legend>Repeat Days:</legend>
+            <input type="checkbox" name="sunday" id="sunday" data-mini="true" value="true">
+            <label for="sunday">S</label>
+
+            <input type="checkbox" name="monday" id="monday" data-mini="true" value="true">
+            <label for="monday">M</label>
+
+            <input type="checkbox" name="tuesday" id="tuesday" data-mini="true" value="true">
+            <label for="tuesday">T</label>
+
+            <input type="checkbox" name="wednesday" id="wednesday" value="true" data-mini="true">
+            <label for="wednesday">W</label>
+
+            <input type="checkbox" name="thursday" id="thursday" data-mini="true" value="true">
+            <label for="thursday">T</label>
+
+            <input type="checkbox" name="friday" id="friday" data-mini="true" value="true">
+            <label for="friday">F</label>
+
+            <input type="checkbox" name="saturday" id="saturday" data-mini="true" value="true">
+            <label for="saturday">S</label>
+
+        </fieldset>
+
+        <input type="button" name="submit" id="submit" value="Add Task" data-mini="true"/>
+
+    </form>
+
+
+</div>
